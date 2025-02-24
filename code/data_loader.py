@@ -29,7 +29,7 @@ def load_cifar10_dataset(batch_size=8, show_image=True) -> Tuple[DataLoader, Dat
     """
     if show_image:
         dataset = torchvision.datasets.CIFAR10(
-            root="../",
+            root="../data",
             transform=transforms.ToTensor(),
             download=True,
             train=False
