@@ -40,5 +40,7 @@ def train_model(
             loss.backward()
             optimizer.step()
 
+        print(f"Epoch: {epoch}, Loss: {loss.item()}")
+
     if with_test:
         test_model(model, test_loader)
